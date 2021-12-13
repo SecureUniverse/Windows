@@ -6,9 +6,18 @@
   - Zenmap
   - Powershell: [Github](https://github.com/BornToBeRoot/PowerShell_IPv4NetworkScanner)
 - IIS
-  - whatweb: ```whatweb 10.0.29.163``` 
-  - httpie ([Github](https://github.com/httpie/httpie)): ```http 10.0.29.163```
-  - 
+  - whatweb
+    - Find information about the running IIS Server 
+    - ```whatweb 10.0.29.163``` 
+  - [httpie](https://github.com/httpie/httpie)) 
+    - Gather target sever information
+    - ```http 10.0.29.163```
+  - dirb
+    - discover the web server’s directories and subdirectories 
+    - ```dirb http://10.0.29.163```
+  - [Browsh](https://github.com/browsh-org/browsh) 
+    - To use the terminal to access the web application
+    - ```browsh --startup-url http://10.0.29.163/Default.aspx``` 
 
 ## Basic Exploitation
 
