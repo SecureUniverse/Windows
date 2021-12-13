@@ -31,10 +31,10 @@
       - ```nmap --script http-methods --script-args http-methods.url-path=/webdav/ 10.0.28.146```
 
 - MSSQL
-  - 
+  - s
   
 - SMB
-  - 
+  - s
 
 
 ## Basic Exploitation
