@@ -2,9 +2,13 @@
 
 ## Recon
 - Host Discovery
-  - Nmap: ```nmap -Pn -sV -p 80 10.0.30.43```
+  - Nmap
+    - ```nmap -Pn -sV -p 80 10.0.30.43```
   - Zenmap
-  - [Powershell](https://github.com/BornToBeRoot/PowerShell_IPv4NetworkScanner)
+  - [PowerShell_IPv4NetworkScanner](https://github.com/BornToBeRoot/PowerShell_IPv4NetworkScanner)
+    - ```.\IPv4NetworkScan.ps1 -IPv4Address 10.0.18.0 -Mask 255.255.240.0 -DisableDNSResolving```
+    - ```.\IPv4NetworkScan.ps1 -IPv4Address 10.0.18.0 -CIDR 20```
+
 - IIS
   - whatweb
     - Find information about the running IIS Server 
@@ -25,6 +29,12 @@
       - ```nmap --script http-headers -sV -p 80 10.0.28.146``` 
     - Discover all allowed methods on /webdav path
       - ```nmap --script http-methods --script-args http-methods.url-path=/webdav/ 10.0.28.146```
+
+- MSSQL
+  - 
+  
+- SMB
+  - 
 
 
 ## Basic Exploitation
